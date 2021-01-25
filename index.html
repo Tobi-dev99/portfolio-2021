@@ -4,144 +4,159 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vastuk Portfolio</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/onepage-scroll.css" />
   </head>
   <body>
     <nav class="navbar">
       <ul class="navbar__items">
-        <li class="navbar__item" data-menuanchor="firstSection">
-          <a href="#firstSection" title="First Section" class="navbar__link">
+        <li class="navbar__item">
+          <a href="#" data-index="1" class="navbar__link">
             <svg class="navbar__icon">
               <use xlink:href="assets/images/sprites.svg#icon-home"></use>
             </svg>
-            <span class="navbar__text">Home</span>
+            <span class="navbar__text-box">
+              <p class="navbar__text">Home</p>
+            </span>
           </a>
         </li>
-        <li class="navbar__item" data-menuanchor="secondSection">
-          <a href="#secondSection" title="Second Section" class="navbar__link">
+        <li class="navbar__item">
+          <a href="#" data-index="2" class="navbar__link">
             <svg class="navbar__icon">
               <use xlink:href="assets/images/sprites.svg#icon-edit-2"></use>
             </svg>
-            <span class="navbar__text">About me</span>
+            <span class="navbar__text-box">
+              <p class="navbar__text">About me</p>
+            </span>
           </a>
         </li>
-        <li class="navbar__item" data-menuanchor="thirdSection">
-          <a href="#thirdSection" title="Third Section" class="navbar__link">
+        <li class="navbar__item">
+          <a href="#" data-index="3" class="navbar__link">
             <svg class="navbar__icon">
               <use xlink:href="assets/images/sprites.svg#icon-settings"></use>
             </svg>
-            <span class="navbar__text">Skills</span>
+            <span class="navbar__text-box">
+              <p class="navbar__text">Skills</p>
+            </span>
           </a>
         </li>
-        <li class="navbar__item" data-menuanchor="fourthSection">
-          <a href="#fourthSection" title="Fourth Section" class="navbar__link">
+        <li class="navbar__item">
+          <a href="#" data-index="4" class="navbar__link">
             <svg class="navbar__icon">
               <use xlink:href="assets/images/sprites.svg#icon-briefcase"></use>
             </svg>
-            <span class="navbar__text">My works</span>
+            <span class="navbar__text-box">
+              <p class="navbar__text">My works</p>
+            </span>
           </a>
         </li>
-        <li class="navbar__item" data-menuanchor="fifthSection">
-          <a href="#fifthSection" title="Fifth Section"class="navbar__link">
+        <li class="navbar__item">
+          <a href="#" data-index="5" class="navbar__link">
             <svg class="navbar__icon">
               <use xlink:href="assets/images/sprites.svg#icon-phone-call"></use>
             </svg>
-            <span class="navbar__text">Contact</span>
+            <span class="navbar__text-box">
+              <p class="navbar__text">Contact</p>
+            </span>
           </a>
         </li>
       </ul>
     </nav>
 
-    <main class="container">
-      <div class="fullpage">
-        <section class="vertical-scrolling" id="home">
-          <object
-            type="image/svg+xml"
-            data="assets/images/vec.svg"
-            class="bg-cover"
-          >
-            Your browser does not support SVG
-          </object>
+    <main class="fullpage container">
+      <section class="vertical-scrolling" id="home">
+        <object
+          type="image/svg+xml"
+          data="assets/images/vec.svg"
+          class="bg-cover"
+        >
+          Your browser does not support SVG
+        </object>
 
-          <header>
-            <h1 class="heading-main u-margin-bottom">
-              <span class="heading--1">Hi,</span>
-              <span class="heading--2">I'm Vastuk.</span>
-            </h1>
-            <h2 class="sub-heading">
-              <span class="text-wrapper">
-                <span class="letters">I'm a front-end web developer.</span>
-              </span>
-            </h2>
-            <a href="#" class="btn btn--green btn--anim">
-              Hire Me
-              <span></span>
-            </a>
-          </header>
-          <div class="social">
-            <!-- <img src="assets/images/chain.svg" alt="chain" class="chain"> -->
-            <!-- <object data="assets/images/chain.svg" type="image/svg+xml" class="chain"></object> -->
-            <ul class="social__items">
-              <li class="social__item">
-                <div class="social__item__box"></div>
-                <a href="#" class="social__link">
-                  <svg>
-                    <use
-                      xlink:href="assets/images/sprites.svg#icon-github"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <svg>
-                    <use
-                      xlink:href="assets/images/sprites.svg#icon-facebook"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <svg>
-                    <use
-                      xlink:href="assets/images/sprites.svg#icon-google-with-circle"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <svg>
-                    <use
-                      xlink:href="assets/images/sprites.svg#icon-instagram"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <svg>
-                    <use
-                      xlink:href="assets/images/sprites.svg#icon-twitter-with-circle"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="arrow-down">
-            <img src="assets/images/arrow.svg" alt="arrow down" />
-          </div>
-        </section>
-        <section class="vertical-scrolling"></section>
-        <section class="vertical-scrolling"></section>
-        <section class="vertical-scrolling"></section>
-      </div>
+        <header>
+          <h1 class="heading-main u-margin-bottom">
+            <span class="heading--1">Hi,</span>
+            <span class="heading--2">I'm Vastuk.</span>
+          </h1>
+          <h2 class="sub-heading">
+            <span class="text-wrapper">
+              <span class="letters">I'm a front-end web developer.</span>
+            </span>
+          </h2>
+          <a href="#" class="btn btn--green btn--anim">
+            Hire Me
+            <span></span>
+          </a>
+        </header>
+        <div class="social">
+          <!-- <img src="assets/images/chain.svg" alt="chain" class="chain"> -->
+          <!-- <object data="assets/images/chain.svg" type="image/svg+xml" class="chain"></object> -->
+          <ul class="social__items">
+            <li class="social__item">
+              <div class="social__item__box"></div>
+              <a href="#" class="social__link">
+                <svg>
+                  <use xlink:href="assets/images/sprites.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg>
+                  <use
+                    xlink:href="assets/images/sprites.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg>
+                  <use
+                    xlink:href="assets/images/sprites.svg#icon-google-with-circle"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg>
+                  <use
+                    xlink:href="assets/images/sprites.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg>
+                  <use
+                    xlink:href="assets/images/sprites.svg#icon-twitter-with-circle"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="arrow-down">
+          <img src="assets/images/arrow.svg" alt="arrow down" />
+        </div>
+      </section>
+      <section class="vertical-scrolling wrapper" id="about">
+        <h1 class="heading-secondary">About</h1>
+        <p class="">
+          Hello! I’m Vastuk Talmale. Frontend web developer from India. I have
+          rich experience in building websites and make it unique and
+          interactive.
+        </p>
+      </section>
+      <section class="vertical-scrolling">3</section>
+      <section class="vertical-scrolling">4</section>
+      <section class="vertical-scrolling">5</section>
     </main>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/animejs/lib/anime.min.js"></script>
-    <script src="/assets/js/fullpage.min.js"></script>
+    <script src="/assets/js/onepagescroll.js"></script>
     <script src="assets/js/animations.js"></script>
     <script src="assets/js/index.js"></script>
   </body>
