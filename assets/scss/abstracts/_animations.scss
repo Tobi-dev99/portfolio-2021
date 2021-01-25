@@ -1,0 +1,39 @@
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes scrollDown{
+    0%{
+        height: 0;
+    }
+
+    100%{
+        height: 100vh;
+    }
+}
+
+@keyframes rotateRight{
+    0%{
+        transform: translate(-100%, 0) rotate(-180deg);
+    }
+
+    100%{
+        transform: translate(0, 0) rotate(0deg);
+    }
+}

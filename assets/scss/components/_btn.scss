@@ -1,0 +1,75 @@
+.btn {
+  position: relative;
+  text-decoration: none;
+  font-size: 3rem;
+  align-self: start;
+  padding: 1rem 3rem;
+  // font-size: 300;
+  margin-top: 3rem;
+
+  &--green {
+    color: var(--light-green);
+    border: 1px solid var(--light-green);
+
+    &:link,
+    &:visited {
+      color: var(--light-green);
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  // &--anim {
+  //     transition: all .4s;
+  //     overflow: hidden;
+  //   span {
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     display: block;
+  //     border-radius: 50%;
+  //     width: 0;
+  //     height: 0;
+  //     background-color: var(--light-green);
+  //     transform: translate(-50%, -50%);
+  //     z-index: -1;
+  //     transition: all .4s ease-in-out
+  //   }
+
+  //   &:hover span{
+  //       width: 38rem;
+  //       height: 38rem;
+  //   }
+  // }
+
+  &.btn--anim {
+    // transition: all .4s ease-in-out;
+    overflow: hidden;
+    & span {
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background-color: var(--light-green);
+      transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    &:hover {
+      color: #c8e7cf;
+
+      & span {
+        width: 225%;
+        height: 562.5px;
+      }
+    }
+  }
+
+  .btn-6:active {
+    background-color: #229e3f;
+  }
+}
